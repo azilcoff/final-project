@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=add_shopping_cart"
+    />
+    <title>Perfume Online Shop</title>
+  </head>
+  <body>
+    <div id="main">
+      <header>
+        <nav>
+          <a href="index.html"
+            ><h1 style="font-family: 'Monsieur La Doulaise'">
+              Perfumes Online
+            </h1></a
+          >
+          <a class="nav-option" href="about.html"><h1>About</h1></a>
+          <a class="nav-option" href="#contact"><h1>Contact</h1></a>
+        </nav>
+      </header>
+      <main>
+        <aside id="side-bar">
+          <button id="clear" onclick="clearFilters()">Clear</button>
+          <hr>
+          <h1>Filter</h1>
+          <label>from: $</label>
+          <input type="number" min="0" id="min" placeholder="min" />
+          <label>to:$</label>
+          <input type="number" min="1" id="max" placeholder="max" />
+          <br />
+          <button id="filter" onclick="filter()">Filter</button>
+          <hr />
+          <h1>Search</h1>
+          <input
+            type="text"
+            id="search-bar"
+            placeholder="product name"
+          />
+          <button id="search-button" onclick="search()">Search</button>
+          <hr />
+          <div id="cart-section">
+          <h1 style="color: hsl(42 100% 61.2%); margin-bottom: 35px;">Cart</h1>
+          <button id="clear-cart" onclick="clearCart()">Clear Cart</button>
+          <br>
+          <a href="purchase.html"><button id="purchase">Purchase</button></a>
+          
+
+
+
+          <h1 id="total" data-value="0">Total : $0.00</h1>
+          </div>
+        </aside>
+        <section id="content">
+          <div
+            class="product"
+            data-name="Perfume 1"
+            data-price="30"
+            data-img="https://www.visconti.in/cdn/shop/files/hero-04.png?v=1725435938&width=1946"
+          ></div>
+          <div
+          class="product"
+          data-name="Perfume 2"
+          data-price="70"
+          data-img="res/perfume2.jpg"
+          >
+          </div>
+          <div
+          class="product"
+          data-name="Sauvage"
+          data-price="120"
+          data-img="res/sauvage.webp"
+          >
+          </div>
+          <div
+          class="product"
+          data-name="Bleu"
+          data-price="200"
+          data-img="res/bleu.webp"
+          >
+          </div>
+          <div
+          class="product"
+          data-name="Carlton"
+          data-price="50"
+          data-img="res/carlton.webp"
+          >
+          </div>
+          <div
+          class="product"
+          data-name="History"
+          data-price="160"
+          data-img="res/history.webp"
+          >
+          </div>
+          <div
+          class="product"
+          data-name="Creme"
+          data-price="240"
+          data-img="res/creme.webp"
+          >
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div id="contact">
+          <form>
+            <h1>Contact:</h1>
+          <div>
+            <label>name: </label>
+            <input type="text" placeholder="name">
+          </div>
+          <div>
+            <label>email: </label>
+            <input type="email" placeholder="example@example.com">
+          </div>
+          <div>
+            <textarea style="margin: 30px" placeholder="message" rows="4" cols="30" data-value="19"></textarea>
+          </div>
+          <button style="width: 120px;height: 34px;">Submit</button>
+          </form>
+          
+        </div>
+      </footer>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>
