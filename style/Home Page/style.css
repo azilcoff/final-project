@@ -1,0 +1,66 @@
+@keyframes perfume-img1 {
+  0% {
+    opacity: 0%;
+    left: 100vh;
+  }
+  100% {
+    opacity: 100%;
+    left: 140px;
+  }
+}
+#title {
+  position: absolute;
+  left: 40%;
+  background: linear-gradient(to right, hsl(183, 100%, 72%), hsl(321, 100%, 72%));
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+#perfume-img1 {
+  position: relative;
+  top: 170px;
+  animation-name: perfume-img1;
+  animation-duration: 2500ms;
+  animation-delay: 200ms;
+  left: 140px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+#text-box {
+  background-color: white;
+  width: 270px;
+  height: 340px;
+  position: relative;
+  bottom: 236px;
+  left: 415px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#go-to-products {
+  position: relative;
+  bottom: 250px;
+  width: 300px;
+  height: 68px;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(110, 100%, 51.2%);
+  font-size: larger;
+  font-weight: bold;
+  color: black;
+}
+
+#go-to-products:hover {
+  background-color: hsl(110, 93%, 35%);
+  cursor: pointer;
+}
+
+#go-to-products:active {
+  background-color: hsl(110, 67%, 71%);
+}/*# sourceMappingURL=style.css.map */
