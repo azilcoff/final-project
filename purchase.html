@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continue To Purchase</title>
+    <link rel="stylesheet" href="style/purchase phase/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-variation-settings:"wdth" 100;
+        background-color: hsl(79, 0%, 86.8%);
+        margin: 0;
+        color: hsl(79, 0%, 1.7%);
+        text-align: center;
+      }
+
+      a {
+        text-decoration: none;
+        color: hsl(79, 0%, 92.9%);
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        font-size: larger;
+        background-color: black;
+        color: hsl(79, 0%, 92.9%);
+        z-index: 999;
+      }
+
+      header > nav {
+        position: fixed;
+        display: flex;
+        gap: 100px;
+        padding-left: 30px;
+        align-items: center;
+      }
+
+      .nav-option {
+        color: hsl(272, 48.5%, 47.3%);
+      }
+    </style>
+</head>
+<body>
+    <header>
+      <nav>
+        <a href="index.html"
+          ><h1 style="font-family: 'Monsieur La Doulaise'">
+            Perfumes Online
+          </h1></a
+        >
+        <a class="nav-option" href="about.html"><h1>About</h1></a>
+        <a class="nav-option" href="products.html"><h1>Products</h1></a>
+      </nav>
+    </header>
+    <main>
+        <form action="index.html">
+          <div id="card details">
+            <h2>Enter Card Details: <i class="fa-solid fa-credit-card" style="color:rgb(63, 154, 228);"></i></h2>
+            <div id="visa" class="input-section">
+              <label><i class="fa-brands fa-cc-visa"></i> Visa </label>
+              <input type="radio" name="card-type" class="card-type-input" required>
+            </div>
+            <div id="master-card" class="input-section">
+              <label><i class="fa-brands fa-cc-mastercard"></i> MasterCard </label>
+              <input type="radio" name="card-type" class="card-type-input" required>
+            </div>
+            <div id="paypal" class="input-section">
+              <label><i class="fa-brands fa-cc-paypal"></i> PayPal </label>
+              <input type="radio" name="card-type" class="card-type-input" required>
+            </div>
+            <div class="input-section" id="card-code">
+              <label>Code : </label>
+              <input type="password" placeholder="xxxx-xxxx-xxxx-xxxx" required>
+            </div>
+            <div class="input-section" id="other-card-code">
+              <label>Other code : </label>
+              <input type="password" placeholder="xxxx" required>
+            </div>
+            <div class="input-section" id="card-expiration-date">
+              <label>Expiration date : </label>
+              <input type="date" placeholder="xxxx" required>
+            </div>
+          </div>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
