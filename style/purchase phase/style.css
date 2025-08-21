@@ -1,0 +1,86 @@
+main {
+  padding-top: 120px;
+}
+
+input[type=radio] {
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+
+input[type=radio]:hover {
+  cursor: pointer;
+}
+
+input {
+  text-align: center;
+  border-radius: 7px;
+  border: 2px solid black;
+  font-size: larger;
+}
+
+#visa {
+  color: hsl(223, 100%, 52.4%);
+}
+
+#master-card {
+  color: hsl(17, 100%, 52.4%);
+}
+
+#paypal {
+  color: hsl(204, 100%, 63.9%);
+}
+
+#card-code {
+  margin-top: 50px;
+}
+#card-code input[type=password] {
+  height: 35px;
+  width: 180px;
+  font-size: larger;
+}
+
+#other-card-code input[type=password] {
+  height: 35px;
+  width: 50px;
+  font-size: larger;
+}
+
+#card-expiration-date {
+  margin-top: 50px;
+}
+#card-expiration-date input[type=date] {
+  height: 35px;
+  width: 120px;
+}
+
+.input-section {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.input-section label {
+  font-weight: 700;
+  font-size: larger;
+}
+
+#submit {
+  margin-top: 60px;
+  width: 180px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 5px 5px 10px black;
+  background-color: hsl(119, 72.5%, 37.8%);
+}
+
+#submit:hover {
+  cursor: pointer;
+  background-color: hsl(119, 72.5%, 27%);
+}
+
+#submit:active {
+  background-color: hsl(119, 72.5%, 52%);
+}/*# sourceMappingURL=style.css.map */
